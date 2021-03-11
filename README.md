@@ -18,7 +18,7 @@ my.mapShow(my.raster)
 ```
 
 
-![png](https://abader.org/nextcloud/s/qjdjFs9QCyrG8ij)
+![png](https://abader.org/nextcloud/s/qjdjFs9QCyrG8ij/preview)
 
 
 
@@ -30,7 +30,7 @@ my.mapShowL(grid,"test")
 ```
 
 
-![png](https://abader.org/nextcloud/s/o5xefgka4QTtwEb)
+![png](https://abader.org/nextcloud/s/o5xefgka4QTtwEb/preview)
 
 
 
@@ -42,4 +42,4 @@ my.mapShowL(grid,"test")
 ```
 
 
-![png](https://abader.org/nextcloud/s/dHYDxCCfffaq2y9)
+![png](https://abader.org/nextcloud/s/dHYDxCCfffaq2y9/preview)
