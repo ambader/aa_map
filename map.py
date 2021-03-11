@@ -27,13 +27,14 @@ def projectionChange(inp,set=False):
         return inp.to_crs({'init': 'epsg:3574'})
 
 def setPrj(val=False):
-    global patches,countries
+    global patches,countries,raster
+    raster=projectionChange(raster,val)
     patches=projectionChange(patches,val)
     countries=projectionChange(countries,val)
 
-def mapShowL(inp,ent="testL"):
+def mapShowL(inp,cc,ccc='Set3',ent="testL"):
     fig, ax = plt.subplots(figsize=(16,9))
-    inp.plot(cmap='Set3',ax=ax,color='pink', edgecolor='grey',alpha=0.5)
+    inp.plot(ax=ax,column=cc,cmap=ccc)
     countries.plot(ax=ax, color='white', edgecolor='black',alpha=0.3)
     for i in rr.index:
         plt.annotate(i,xy=(rr.geometry[i].centroid.x,rr.geometry[i].centroid.y),size=1)
